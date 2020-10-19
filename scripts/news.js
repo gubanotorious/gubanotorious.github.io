@@ -1,7 +1,12 @@
+var _articles;
+
 $(async function(){
-    let articles = await getNewsArticles();
+    if(!_articles){
+        _articles = await getNewsArticles();
+    }
+
     let $container = $("#news-container");
-    for(const article of articles){
+    for(const article of _articles){
         let html = `
             <div class="news-article" onclick="window.location.href='${article.FeedUrl}';">
                 <div class="news-image"><img src="${article.ImageUrl}"></img></div>
