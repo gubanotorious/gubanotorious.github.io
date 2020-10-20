@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="icon" type="image/png" href="img/bridge-token.png">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="./css/site.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./css/site.css?v=123" rel="stylesheet" type="text/css" media="all">
     <script src="./fonts/webfont.js" type="text/javascript"></script>
     <script type="text/javascript">WebFont.load({ google: { families: ["Roboto:300,regular,500", "Roboto Slab:100,300,regular", "Roboto Condensed:regular,700"] } });</script>
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]-->
@@ -19,9 +19,10 @@
                 <div class="logo"><img src="img/bridge-white.png"></div>
             </a>
             <nav role="navigation" class="nav-menu clearfix nav-menu">
-                <a href="#" class="nav-link nav-link" style="max-width: 940px;" onclick="loadContent('learn')">Bridge Identity</a>
-                <a href="#" class="nav-link nav-link" style="max-width: 940px;" onclick="loadContent('network')">Bridge Marketplace</a>
+                <a href="#" class="nav-link nav-link" style="max-width: 940px;" onclick="loadContent('learn')">Identity</a>
+                <a href="#" class="nav-link nav-link" style="max-width: 940px;" onclick="loadContent('network')">Network</a>
                 <a href="#" class="nav-link nav-link" style="max-width: 940px;" onclick="loadContent('news')">Publications</a>
+                <a href="#" class="nav-link nav-link" style="max-width: 940px;" onclick="loadContent('platforms')">Download</a>
                 <a href="docs/overview/" class="nav-link nav-link" style="max-width: 940px;">Documentation</a>
             </nav>
         </div>
@@ -31,39 +32,40 @@
     <div class="section footer">
         <div class="container">
             <div class="row">
-                <div class="footer-column col col-4">
+                <div class="footer-column col col-4 footer-links">
                     <h4>Site Map</h4>
                     <ul role="list" class="list-unstyled">
-                        <li><a href="" class="footer-link">Learn More</a></li>
-                        <li><a href="" class="footer-link">Bridge Network</a></li>
-                        <li><a href="" class="footer-link">Latest News</a></li>
-                        <li><a href="" class="footer-link">Developers</a></li>
+                        <li><a href="#" class="footer-link" onclick="loadContent('learn')">Identity</a></li>
+                        <li><a href="#" class="footer-link" onclick="loadContent('network')">Network</a></li>
+                        <li><a href="#" class="footer-link" onclick="loadContent('news')">Publications</a></li>
+                        <li><a href="#" class="footer-link" onclick="loadContent('platforms')">Download</a></li>
+                        <li><a href="docs/overview/" class="footer-link">Documentation</a></li>
                     </ul>
                 </div>
-                <div class="footer-column col col-3">
+                <div class="footer-column col col-3 footer-links">
                     <h4>Boring Stuff</h4>
                     <ul role="list" class="list-unstyled">
-                        <li><a href="" class="footer-link">Privacy Policy</a></li>
-                        <li><a href="" class="footer-link">Terms of Service</a></li>
-                        <li><a href="" class="footer-link">Whitepaper</a></li>
+                        <li><a href="#" class="footer-link" onclick="window.open('https://bridge-protocol.github.io/docs/tos');">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link" onclick="window.open('https://bridge-protocol.github.io/docs/tos');">Terms of Service</a></li>
+                        <li><a href="#" class="footer-link" onclick="window.open('./content/bridge-protocol-whitepaper-1_0.pdf');">Whitepaper</a></li>
                     </ul>
                 </div>
-                <div class="footer-column col col-5">
-                    <div><img src="img/bridge-white.png" style="height:50px; margin:10px;""></div>
+                <div class="footer-column col col-5 center">
+                    <div><img src="img/bridge-white.png" style="height:50px; margin-bottom:10px;""></div>
                     <div>
-                        <a href="" class="social-link inline-block"><img src="./img/icons/twitter-icon.png" alt=""></a>
-                        <a href="" class="social-link inline-block"><img src="./img/icons/medium-icon.png" alt=""></a>
-                        <a href="" class="social-link inline-block"><img src="./img/icons/telegram-icon.png" alt=""></a>
-                        <a href="" class="social-link inline-block"><img src="./img/icons/linkedin-icon.png" alt=""></a>
-                        <a href="" class="social-link inline-block"><img src="./img/icons/reddit-icon.png" alt=""></a>
-                        <a href="" class="social-link inline-block"><img src="./img/icons/github-icon.png" alt=""></a>
-                        <a href="" class="social-link inline-block"><img src="./img/icons/email-icon.png" alt=""></a>
+                        <a href="#" class="social-link inline-block"><img src="./img/icons/twitter-icon.png" alt="" onclick="window.open('https://twitter.com/BridgeProtocol');"></a>
+                        <a href="#" class="social-link inline-block"><img src="./img/icons/medium-icon.png" alt="" onclick="window.open('https://medium.com/bridgeprotocol');"></a>
+                        <a href="#" class="social-link inline-block"><img src="./img/icons/telegram-icon.png" alt="" onclick="window.open('https://t.me/BRIDGEprotocol');"></a>
+                        <a href="#" class="social-link inline-block"><img src="./img/icons/linkedin-icon.png" alt="" onclick="window.open('https://www.linkedin.com/company/bridge-protocol/');"></a>
+                        <a href="#" class="social-link inline-block"><img src="./img/icons/reddit-icon.png" alt="" onclick="window.open('https://www.reddit.com/r/iambridgeprotocol/');"></a>
+                        <a href="#" class="social-link inline-block"><img src="./img/icons/github-icon.png" alt="" onclick="window.open('https://github.com/bridge-protocol');"></a>
+                        <a href="mailto:support@bridgeprotocol.io" class="social-link inline-block"><img src="./img/icons/email-icon.png" alt=""></a>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="footer-column col col-12" style="text-align:center; padding-top: 20px;">
-                    ©2018-<span id="current_year">2020</span> Bridge Protocol Corporation, All Rights Reserved.
+                    ©2018-<span id="current_year">2020</span> Bridge Protocol Corporation.
                 </div>
             </div>
         </div>

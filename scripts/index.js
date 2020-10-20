@@ -1,5 +1,7 @@
 $(function(){
     loadContent("home");
+
+    $("#current_year").text(new Date().getFullYear());
 });
 
 

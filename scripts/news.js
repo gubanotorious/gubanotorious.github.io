@@ -7,11 +7,15 @@ $(async function(){
 
     let $container = $("#news-container");
     for(const article of _articles){
+        let date = article.PublishDate;
+        let idx = date.indexOf("T");
+        date = article.PublishDate.substring(0, idx);
+
         let html = `
-            <div class="news-article" onclick="window.location.href='${article.FeedUrl}';">
+            <div class="news-article" onclick="window.open('${article.FeedUrl}');">
                 <div class="news-image"><img src="${article.ImageUrl}"></img></div>
                 <div class="news-info">
-                    <div>${article.PublishDate}</div>
+                    <div>${date}</div>
                     <div>${article.Title}</div>
                 </div>
             </div>
