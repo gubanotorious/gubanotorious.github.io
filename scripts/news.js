@@ -15,8 +15,10 @@ $(async function(){
             <div class="news-article" onclick="window.open('${article.FeedUrl}');">
                 <div class="news-image"><img src="${article.ImageUrl}"></img></div>
                 <div class="news-info">
-                    <div>${date}</div>
-                    <div>${article.Title}</div>
+                    <h3 style="font-size:1.2em; margin-bottom:0px;">
+                        ${article.Title}
+                    </h3>
+                    <h3 style="font-size:1em; margin-top:-.4em;">${date}</h3>
                 </div>
             </div>
         `;
