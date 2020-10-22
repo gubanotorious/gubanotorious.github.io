@@ -2955,7 +2955,6 @@ p {
 	font-size: 1.2em;
 }
 
-
 @media screen and (max-width: 767px) {
   body {
     padding-top: 0px;
@@ -3025,6 +3024,9 @@ p {
   }
   .feature-list {
     margin-bottom: 20px;
+  }
+  .feature-list-nobreak{
+	margin-top:2px;
   }
   .pricing-column {
     margin-right: 33px;
